@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" role="img" aria-label="Trip Plan">
+  <rect width="180" height="180" rx="40" fill="#1e5a4a"/>
+  <path fill="#f3ece1" d="M90 34c-24 0-44 19.4-44 43.4 0 32.2 44 68.6 44 68.6s44-36.4 44-68.6C134 53.4 114 34 90 34zm0 62.2a18.8 18.8 0 1 1 0-37.6 18.8 18.8 0 0 1 0 37.6z"/>
+  <circle cx="90" cy="77.4" r="8" fill="#c14a22"/>
+</svg>

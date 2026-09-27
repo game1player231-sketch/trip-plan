@@ -1,0 +1,18 @@
+{
+  "name": "Trip Plan",
+  "short_name": "Trip Plan",
+  "description": "Plan trips and open saved places in Google Maps or Apple Maps.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f3ece1",
+  "theme_color": "#f3ece1",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

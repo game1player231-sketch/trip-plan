@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1"
+    />
+    <meta name="theme-color" content="#f3ece1" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Trip Plan" />
+    <meta
+      name="description"
+      content="Plan trips by location and open each place in Google Maps or Apple Maps with one tap."
+    />
+    <title>Trip Plan</title>
+    <link rel="manifest" href="manifest.json" />
+    <link rel="icon" href="icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="icon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,650&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=5" />
+  </head>
+  <body>
+    <div class="app" id="app">
+      <header class="topbar" id="topbar"></header>
+      <main class="screen" id="screen"></main>
+      <button class="fab" id="fab" type="button" hidden></button>
+    </div>
+
+    <div class="sheet-root" id="sheet-root" hidden>
+      <div class="sheet-backdrop" data-action="close-sheet"></div>
+      <section class="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title">
+        <div class="sheet-handle"></div>
+        <div class="sheet-body" id="sheet-body"></div>
+      </section>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+    <input id="import-file" type="file" accept="application/json,.json" hidden />
+
+    <div class="lightbox" id="lightbox" hidden>
+      <button class="lightbox-backdrop" type="button" data-action="close-lightbox" aria-label="Close photo"></button>
+      <img id="lightbox-image" alt="" />
+      <button class="icon-btn lightbox-close" type="button" data-action="close-lightbox" aria-label="Close photo">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M7 6.4 12 11.3 17 6.4 18.4 7.8 13.4 12.8 18.4 17.8 17 19.2 12 14.2 7 19.2 5.6 17.8 10.6 12.8 5.6 7.8z"/></svg>
+      </button>
+    </div>
+
+    <script src="app.js?v=5"></script>
+  </body>
+</html>
